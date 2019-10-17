@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>Book List</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="center light-blue-text text-darken-4">
+      <i class="material-icons medium">menu_book</i>
+      BookList
+    </h1>
+    <form id="book-form">
+      <div class="row">
+        <div class="form-group input-field col s12">
+          <label for="title">Title</label>
+          <input type="text" id="title">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group input-field col s12">
+          <label for="author">Author</label>
+          <input type="text" id="author">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group input-field col s12">
+          <label for="isbn">ISBN</label>
+          <input type="text" id="isbn">
+        </div>
+      </div>
+      <a class="btn-floating btn-large waves-effect waves-light green darken-2 right" id="btn-add">
+        <i class="material-icons">add</i>
+      </a>
+    </form>
+
+    <table class="striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+        </tr>
+      </thead>
+
+      <tbody id="book-list">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
